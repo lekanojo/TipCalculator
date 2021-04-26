@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Main Header -->
+    <div class="container">
+      <div class="header">
+        <h1>Tip Calculator</h1>
+      </div>
+
+      <!-- <form> -->
+      <div class="bill-amount">
+        <label for="bill"> How much was your bill ?</label>
+        <br />
+        <input
+          type="number"
+          id="bill"
+          name="bill"
+          placeholder="Bill amount in CAD"
+          required
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div class="service">
+        <label for="service-review">How was your service?</label>
+        <br />
+        <select name="review" id="service-review">
+          <option value="">Please pick below</option>
+          <option value="0.05">5%-Terrible</option>
+          <option value="0.1">10%-Not Happy</option>
+          <option value="0.4">40%-Ok service</option>
+          <option value="0.6">60%-Very Good</option>
+          <option value="1">100%-Excellent</option>
+        </select>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="bill-share">
+        <label for="sharing">How many people are sharing the bill ?</label>
+        <br />
+        <input
+          type="text"
+          name="sharing"
+          id="sharing"
+          placeholder="Number of Guests"
+          required
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div class="button">
+        <button id="button">Calculate Final Bill</button>
+      </div>
+
+      <p class="result"></p>
+      <!-- </form> -->
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
